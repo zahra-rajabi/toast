@@ -1,0 +1,105 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.btns {
+  @include fontStyle($firstFontRegular, 1.6rem);
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  letter-spacing: 0.6px;
+
+  &__btn:link,
+  &__btn:visited {
+    display: inline-block;
+    color: $firstColor;
+    border-radius: 6px;
+    transition: all 300ms;
+  }
+  // &__btn:not(:last-child) {
+  //   padding: 1.2rem 2rem;
+  // }
+  &__btn:hover,
+  &__btn:active {
+    color: $secondColor;
+  }
+  &__btn--border:link,
+  &__btn--border:visited {
+    border: 2px solid $firstColor;
+    padding: 1.2rem 2.4rem;
+    font-weight: 600;
+  }
+  &__btn--border:hover,
+  &__btn--border:active {
+    border: 2px solid $secondColor;
+  }
+  &__btn--fill:link,
+  &__btn--fill:visited {
+    background-color: $firstColor;
+    color: #fff;
+    border: 2px solid $firstColor;
+    padding: 1.2rem 2.4rem;
+    font-weight: 500;
+  }
+  &__btn--fill:hover,
+  &__btn--fill:active {
+    background-color: $secondColor;
+    border-color: $secondColor;
+  }
+}
+.header-section__video-box {
+  .btns__btn:link,
+  .btns__btn:visited {
+    position: absolute;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+  }
+  &-btn:link,
+  &-btn:active {
+    border-radius: 900rem;
+    padding: 1.2rem 2rem;
+  }
+}
+
+////
+///
+.point-btn {
+  &:link,
+  &:visited {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-left: 2rem;
+  }
+}
+.offer-items__new-icon,
+.point-btn-icon {
+  width: 1.6rem;
+}
+///video section
+.video-section__video-box {
+  .btns__btn:link,
+  .btns__btn:visited {
+    font-size: 1.8rem;
+    font-weight: 500;
+    position: absolute;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+  }
+  &-btn:link,
+  &-btn:active {
+    border-radius: 900rem;
+    padding: 1.8rem 2.8rem;
+  }
+}

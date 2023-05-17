@@ -1,0 +1,31 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+///////////////////////////////////////
+.heading-primary {
+  @include fontStyle($secondFontsMedium, 5rem);
+  letter-spacing: 2px;
+  margin-bottom: 2.4rem;
+  color: $headingColor;
+}
+.paragraph {
+  color: $textGrayColor;
+  @include fontStyle($firstFontRegular, 1.6rem);
+  line-height: $lineHeightParagraph;
+  padding-right: 2rem;
+  letter-spacing: 0.7px;
+  font-weight: 200;
+}
+.heading-secondary {
+  @include fontStyle($secondFontsMedium, 4.5rem);
+  color: $headingColor;
+  text-align: center;
+  letter-spacing: 1.8px;
+  margin-bottom: 4.8rem;
+}
+.heading-tertiary {
+  @include fontStyle($secondFontsMedium, 2.4rem);
+  color: $headingColor;
+  margin-bottom: 2.4rem;
+  letter-spacing: 0.2px;
+}
