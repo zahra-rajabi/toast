@@ -1,0 +1,42 @@
+////////// width 1320
+@media all and (max-width: 82.5em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .header-section__video-box video {
+    transform: translate(0);
+  }
+  .nav-list {
+    gap: 2.8rem;
+  }
+  .why-section__content-box {
+    gap: 5.2rem;
+  }
+  // .customizable-content {
+  //   padding: 0 4rem;
+  // }
+  .video-section__video-box video {
+    height: 110vh;
+  }
+}
+/////////// width 1120
+@media all and (max-width: 70em) {
+  html {
+    font-size: 52%;
+  }
+
+  .header-section {
+    padding-bottom: 6.2rem;
+  }
+  .nav {
+    justify-content: space-around;
+    .btns__btn:last-child {
+      display: none;
+    }
+  }
+  .point-list {
+    padding: 2rem 1.6rem;
+  }
+}
+/////// width 1050
