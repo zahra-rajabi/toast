@@ -734,6 +734,36 @@ html {
   color: #252a35;
 }
 
+.nav-mobile {
+  display: none;
+  width: 3rem;
+  height: 0.3rem;
+  background-color: #000;
+  border-radius: 10px;
+  position: relative;
+}
+.nav-mobile::after, .nav-mobile::before {
+  content: "";
+  display: inline-block;
+  width: 3rem;
+  height: 0.3rem;
+  background-color: #000;
+  border-radius: 10px;
+  position: absolute;
+}
+.nav-mobile::before {
+  bottom: 0.8rem;
+}
+.nav-mobile::after {
+  top: 0.8rem;
+}
+.nav-mobile.nav-mobile--open .nav-mobile::before {
+  transform: rotateX(50px);
+}
+.nav-mobile.nav-mobile--open .nav-mobile::after {
+  transform: rotateX(-50%);
+}
+
 @media all and (max-width: 82.5em) {
   html {
     font-size: 56.25%;
@@ -766,6 +796,17 @@ html {
   }
   .point-list {
     padding: 2rem 1.6rem;
+  }
+}
+@media all and (max-width: 65.25em) {
+  .nav-list {
+    display: none;
+  }
+  .nav .btns {
+    display: none;
+  }
+  .nav-mobile {
+    display: inline-block;
   }
 }
 

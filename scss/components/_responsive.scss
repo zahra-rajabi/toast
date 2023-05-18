@@ -40,3 +40,16 @@
   }
 }
 /////// width 1050
+@media all and (max-width: 65.25em) {
+  .nav {
+    &-list {
+      display: none;
+    }
+    .btns {
+      display: none;
+    }
+    &-mobile {
+      display: inline-block;
+    }
+  }
+}

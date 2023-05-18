@@ -595,4 +595,40 @@ html {
     }
   }
 }
+/////////////////nav mobile style
+.nav-mobile {
+  display: none;
+  width: 3rem;
+  height: 0.3rem;
+  background-color: $blackColor;
+  border-radius: 10px;
+  position: relative;
+
+  &::after,
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 3rem;
+    height: 0.3rem;
+    background-color: $blackColor;
+    border-radius: 10px;
+    position: absolute;
+  }
+  &::before {
+    bottom: 0.8rem;
+  }
+  &::after {
+    top: 0.8rem;
+  }
+  &.nav-mobile--open {
+    .nav-mobile {
+      &::before {
+        transform: rotateX(50px);
+      }
+      &::after {
+        transform: rotateX(-50%);
+      }
+    }
+  }
+}
 @import "components/responsive";
