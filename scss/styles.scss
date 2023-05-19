@@ -620,7 +620,61 @@ html {
 .nav-mobile-icon {
   font-size: 4.8rem;
 }
-
+.nav-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.2rem;
+}
+.nav-mobile-number {
+  &:link,
+  &:visited {
+    font-size: 2.2rem;
+    color: $firstColor;
+    transition: all 300ms;
+    position: relative;
+  }
+  &:hover,
+  &:active {
+    color: $secondColor;
+  }
+  &::before {
+    display: inline-block;
+    content: " ";
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 52%;
+    top: -2px;
+    background-color: $GreenColor;
+  }
+  &::after {
+    display: flex;
+    content: "Now Available ";
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    width: 75%;
+    height: 4rem;
+    color: $whiteColor;
+    border-radius: 5rem;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-30%);
+    background-color: $GreenColor;
+    margin-top: 0.6rem;
+    letter-spacing: 0.7px;
+  }
+}
+.nav-mobile-number-icon {
+  position: absolute;
+  left: 75%;
+  top: 90%;
+  color: $GreenColor;
+}
 .nav-mobile-wrapper {
   transition: all 500ms;
   visibility: hidden;
@@ -641,14 +695,14 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 4.2rem;
-  margin-bottom: 6.4rem;
+  font-size: 3.2rem;
+  margin-bottom: 4.2rem;
 }
 .nav-mobile-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3.8rem;
+  font-size: 3.2rem;
   gap: 2.8rem;
 }
 .nav-mobile-logo__img {
