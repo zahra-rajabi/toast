@@ -37,7 +37,7 @@ html {
   gap: 7.2rem;
   align-items: center;
   position: fixed;
-  z-index: 99999;
+  z-index: 999999997;
   background-color: $whiteColor;
   width: 100%;
   padding: 1.8rem 0;
@@ -47,6 +47,12 @@ html {
   @include fontStyle($firstFontRegular, 1.6rem);
   &-logo__img {
     width: 10rem;
+  }
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6.2rem;
   }
   &-list {
     font-weight: lighter;
@@ -596,39 +602,56 @@ html {
   }
 }
 /////////////////nav mobile style
-.nav-mobile {
-  display: none;
-  width: 3rem;
-  height: 0.3rem;
-  background-color: $blackColor;
-  border-radius: 10px;
-  position: relative;
+.nav-mobile-header {
+  background-color: $whiteColor;
+  display: flex;
+  align-items: center;
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  justify-content: space-between;
+  position: fixed;
+  padding: 0.8rem 4.8rem 1.2rem;
+  top: 0;
+  z-index: 99999;
+  right: 0;
+  left: 0;
+}
+.nav-mobile-icon {
+  font-size: 4.8rem;
+}
 
-  &::after,
-  &::before {
-    content: "";
-    display: inline-block;
-    width: 3rem;
-    height: 0.3rem;
-    background-color: $blackColor;
-    border-radius: 10px;
-    position: absolute;
-  }
-  &::before {
-    bottom: 0.8rem;
-  }
-  &::after {
-    top: 0.8rem;
-  }
-  &.nav-mobile--open {
-    .nav-mobile {
-      &::before {
-        transform: rotateX(50px);
-      }
-      &::after {
-        transform: rotateX(-50%);
-      }
-    }
-  }
+.nav-mobile-wrapper {
+  transition: all 500ms;
+  visibility: hidden;
+
+  pointer-events: none;
+  opacity: 0;
+  background-color: rgba($whiteColor, 0.9);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99998;
+  padding: 7.2rem;
+}
+.nav-mobile-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 4.2rem;
+  margin-bottom: 6.4rem;
+}
+.nav-mobile-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.8rem;
+  gap: 2.8rem;
+}
+.nav-mobile-logo__img {
+  width: 12rem;
 }
 @import "components/responsive";

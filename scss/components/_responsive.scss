@@ -42,14 +42,16 @@
 /////// width 1050
 @media all and (max-width: 65.25em) {
   .nav {
-    &-list {
-      display: none;
-    }
-    .btns {
-      display: none;
-    }
-    &-mobile {
-      display: inline-block;
-    }
+    display: none;
+  }
+  .nav-mobile-wrapper--open {
+    visibility: visible;
+    pointer-events: auto;
+    opacity: 1;
+  }
+  .nav-mobile-header {
+    visibility: visible;
+    pointer-events: auto;
+    opacity: 1;
   }
 }
