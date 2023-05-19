@@ -11,7 +11,10 @@
     gap: 2.8rem;
   }
   .why-section__content-box {
-    gap: 5.2rem;
+    padding: 0 2.4rem;
+    .paragraph {
+      padding-right: 0;
+    }
   }
   // .customizable-content {
   //   padding: 0 4rem;
@@ -41,6 +44,28 @@
 }
 /////// width 1050
 @media all and (max-width: 65.25em) {
+  .heading-primary {
+    font-size: 6rem;
+  }
+  .header-section {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    &::before {
+      background-size: 75%;
+    }
+    .btns {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__video-box video {
+      width: 100%;
+      height: 100vh;
+      object-fit: contain;
+    }
+  }
   .nav {
     display: none;
   }
@@ -57,5 +82,13 @@
   .point-data__text-box .heading-tertiary {
     line-height: 1.4;
     letter-spacing: 1.5px;
+  }
+  .logos-content {
+    flex-wrap: wrap;
+    gap: 4.2rem;
+  }
+  .video-section {
+    display: none;
+    padding: 0;
   }
 }
