@@ -286,6 +286,9 @@ html {
 .point-data {
   grid-template-columns: 1fr 2fr;
   padding: 4rem 3.6rem;
+  &--small-screen {
+    display: none;
+  }
   &__image-box {
     &-img {
       width: 100%;
