@@ -126,6 +126,9 @@
   .point-data--big-screen {
     display: none;
   }
+  .header-section__video-box {
+    padding: 0 2.4rem;
+  }
 }
 /////////// width 880
 @media all and (max-width: 55em) {
@@ -147,5 +150,30 @@
   }
   .heading-tertiary {
     font-size: 2.4rem;
+  }
+  .paragraph {
+    font-size: 1.8rem;
+  }
+}
+///////////////////// width 675
+@media all and (max-width: 42.18em) {
+  .why-section__content-box {
+    grid-template-columns: 1fr;
+  }
+  .offer-items__item {
+    grid-template-columns: 1fr;
+  }
+  .offer-items__img {
+    height: 45rem;
+    border-bottom-right-radius: 1rem;
+  }
+  .heading-secondary {
+    font-size: 3.2rem;
+  }
+  .form-image {
+    display: none;
+  }
+  .form-wrapper {
+    grid-template-columns: 1fr;
   }
 }

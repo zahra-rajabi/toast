@@ -662,7 +662,7 @@ html {
   list-style-type: decimal;
   letter-spacing: 0.2px;
   color: rgba(102, 102, 102, 0.8);
-  line-height: 1.6;
+  line-height: 1.6rem;
 }
 
 .footer {
@@ -974,6 +974,9 @@ html {
   .point-data--big-screen {
     display: none;
   }
+  .header-section__video-box {
+    padding: 0 2.4rem;
+  }
 }
 @media all and (max-width: 55em) {
   .container {
@@ -993,6 +996,30 @@ html {
   }
   .heading-tertiary {
     font-size: 2.4rem;
+  }
+  .paragraph {
+    font-size: 1.8rem;
+  }
+}
+@media all and (max-width: 42.18em) {
+  .why-section__content-box {
+    grid-template-columns: 1fr;
+  }
+  .offer-items__item {
+    grid-template-columns: 1fr;
+  }
+  .offer-items__img {
+    height: 45rem;
+    border-bottom-right-radius: 1rem;
+  }
+  .heading-secondary {
+    font-size: 3.2rem;
+  }
+  .form-image {
+    display: none;
+  }
+  .form-wrapper {
+    grid-template-columns: 1fr;
   }
 }
 
