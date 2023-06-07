@@ -935,8 +935,11 @@ html {
     letter-spacing: 1.5px;
   }
   .logos-content {
+    gap: 3.6rem;
     flex-wrap: wrap;
-    gap: 4.2rem;
+  }
+  .logos-content-image {
+    width: 10rem;
   }
   .video-section {
     display: none;
@@ -988,8 +991,14 @@ html {
   .heading-secondary {
     font-size: 4rem;
   }
+  .offer-section .heading-secondary {
+    margin-bottom: 3.6rem;
+  }
+  .offer-section .container {
+    padding: 0;
+  }
   .offer-items {
-    grid-template-columns: 1fr;
+    grid-template-columns: 0.8fr;
   }
   .offer-items__new {
     display: none;
@@ -1000,26 +1009,98 @@ html {
   .paragraph {
     font-size: 1.8rem;
   }
+  .customizable-content {
+    grid-template-columns: 1fr;
+  }
+  .customizable-list {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 @media all and (max-width: 42.18em) {
+  html {
+    font-size: 43.75%;
+  }
+  .paragraph {
+    font-size: 1.4rem;
+  }
+  .logos-content__image {
+    width: 8rem;
+  }
   .why-section__content-box {
     grid-template-columns: 1fr;
+  }
+  .offer-items {
+    padding: 0;
   }
   .offer-items__item {
     grid-template-columns: 1fr;
   }
   .offer-items__img {
-    height: 45rem;
+    height: 35rem;
     border-bottom-right-radius: 1rem;
   }
   .heading-secondary {
-    font-size: 3.2rem;
+    font-size: 3.6rem;
+    margin-bottom: 3rem;
   }
   .form-image {
     display: none;
   }
   .form-wrapper {
     grid-template-columns: 1fr;
+  }
+  .footer-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4.8rem;
+  }
+  .footer-box:first-child {
+    grid-column: 1/-1;
+  }
+  .footer-box:first-child .footer-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .footer-box:first-child .footer-list-item:first-child {
+    display: none;
+  }
+  .footer-privacy__list {
+    flex-wrap: wrap;
+  }
+}
+@media all and (max-width: 28.12em) {
+  .offer-items {
+    grid-template-columns: 1fr;
+  }
+  .offer-items__img {
+    height: 25rem;
+  }
+  .nav-mobile-number:link {
+    font-size: 1.6rem;
+  }
+  .point-list {
+    margin: 0;
+  }
+  .point-data__text-box .btns {
+    flex-direction: column;
+    margin-bottom: 2.4rem;
+  }
+  .nav-mobile-number::after, .nav-mobile-number::before {
+    display: none;
+  }
+  .form-data .heading-secondary {
+    font-size: 2.2rem;
+  }
+  .nav-mobile-number-icon {
+    display: none;
+  }
+  .info-list {
+    padding: 0;
+  }
+  .info-list-item {
+    line-height: 2.2rem;
   }
 }
 
